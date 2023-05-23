@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffc80a;
+        opacity: 0.83;
+      }
+
+      .cls-2 {
+        fill: #545454;
+        font-size: 18px;
+        font-family: RobotoSlab-Bold, Roboto Slab;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="Group_740" data-name="Group 740" transform="translate(-1397 -473)">
+    <circle id="Ellipse_12" data-name="Ellipse 12" class="cls-1" cx="20" cy="20" r="20" transform="translate(1397 473)"/>
+    <text id="_" data-name="@" class="cls-2" transform="translate(1409 499.231)"><tspan x="0" y="0">@</tspan></text>
+  </g>
+</svg>

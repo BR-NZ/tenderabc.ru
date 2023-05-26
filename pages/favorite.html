@@ -7,27 +7,27 @@
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/fontawesome-pro-5.10/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/fontawesome-pro-5.10/css/fontawesome-all.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <title>Поиск торгов / tenderabc.ru</title>
+    <title>Избранные торги / tenderabc.ru</title>
 </head>
 
 <body>
     <header id="top">
         <div class="head row">
             <div class="wrapper fl">
-                <a href="#" class="index">
+                <a href="../" class="index">
                     <div class="logo-area" style="box-sizing: content-box; padding-right: 30px; width: 62px;">          
-                        <div class="logo" style="font-family: 'Open Sans', sans-serif; font-weight: 400; background-color: #F37373; color: #FFFFFF; width: 100%; height: 114px; padding: 0px 9px; padding-top: 40px; line-height: 20px; font-size: 13px; transition: all 0.1s ease-in;">
+                        <div class="logo" style="font-family: 'Open Sans', sans-serif; font-weight: 400; background-color: #CF1616; color: #FFFFFF; width: 100%; height: 114px; padding: 0px 9px; padding-top: 40px; line-height: 20px; font-size: 13px; transition: all 0.1s ease-in;">
                             <div>
                                 <span style="text-align: center; float: left;">T<br>D<br>A</span>
                                 <span style="text-align: center; float: left; margin-left: 9px;">E<br>E<br>B</span>
                                 <span style="text-align: center; float: right;">N<br>R<br>C</span>
                             </div>
                         </div>
-                        <div style="width: 0px; height: 0px; border-top: 10px solid #F37373; border-bottom: 0px; border-left: 31px solid transparent; border-right: 31px solid transparent;">
+                        <div style="width: 0px; height: 0px; border-top: 10px solid #CF1616; border-bottom: 0px; border-left: 31px solid transparent; border-right: 31px solid transparent;">
                         </div>
                     </div>
                     <p>Единая система<br>поиска электронных торгов</p>
@@ -41,7 +41,7 @@
                         <i class="fal fa-bell"></i>
                         <span class="counter">32</span>
                     </a>
-                    <a href="#" class="icon profile">
+                    <a href="profile.html" class="icon profile">
                         <i class="fal fa-user"></i>
                     </a>
                 </div>
@@ -49,145 +49,37 @@
         </div>
         <nav class="row">
             <div class="wrapper fl">
-                <a href="#" class="item active"><i class="fal fa-search"></i>Искать торги</a>
-                <a href="#" class="item"><i class="fal fa-bookmark"></i>Сохраненные поиски</a>
-                <a href="#" class="item"><i class="fal fa-heart"></i>Избранные торги</a>
+                <a href="search.html" class="item"><i class="fal fa-search"></i>Искать торги</a>
+                <a href="save.html" class="item"><i class="fal fa-bookmark"></i>Сохраненные поиски</a>
+                <a href="favorite.html" class="item active"><i class="fal fa-heart"></i>Избранные торги</a>
                 <a href="#" class="item"><i class="fal fa-eye"></i>Отследить конкурента</a>
                 <a href="#" class="link blue sub-item">Свернуть настройки<i class="fal fa-sliders-h"></i></a>
             </div>
         </nav>
     </header>
-    <main id="search">
+    <main id="favorite">
         <div class="row-sh">
             <div class="wrapper">
-                <div class="title fl">
-                    <div class="left-area">
-                        <p class="title">Задайте параметры поиска</p>
-                    </div>
-                    <div class="right-area fl">
-                        <div class="input list"><div>Выбрать из сохраненных</div></div>
-                        <a href="#" class="link list i blue addOption"><i class="fal fa-chevron-up"></i>Обычный поиск</a>
-                    </div>       
+                <div class="row subscribe-area">
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe" class="gold bg">Уведомлять об измененияx в этих торгах</label>
                 </div> 
-                <div class="row upperOption">
-                    <div class="row fl">
-                        <div class="left-area fll">
-                            <input type="text" class="fill green wordPlus" placeholder="Поисковый запрос (слово или словосочетание)">
-                            <a href="#" class="link list i red strongSearch"><i class="fal fa-chevron-down"></i>Строгое соответствие</a>
-                        </div>
-                        <div class="right-area">
-                            <div class="input date"><div>Дата публикации заявки</div></div>
-                        </div>
-                    </div>
-                    <div class="row fl">
-                        <div class="left-area fll">
-                            <input type="text" class="fill list red wordMinus" placeholder="Слова для исключения из поиска (через запятую)">
-                            <a href="#" class="link list i blue difSearch"><i class="fal fa-chevron-down"></i>Все формы слов</a>
-                        </div>
-                        <div class="right-area">
-                            <div class="input date"><div>Дата завершения подачи заявок</div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row middleOption">
-                    <div class="row fl">
-                        <div class="left-area">
-                            <p class="b-label">Источники заявок</p>
-                            <div class="multiselect">
-                                <div>
-                                    <input type="checkbox" id="item1">
-                                    <label for="item1">44-ФЗ</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="item2">
-                                    <label for="item2">23-ФЗ</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="item3">
-                                    <label for="item3">Коммерческие</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-area">
-                            <p class="b-label">Начальная цена </p>
-                            <div class="input price"><div>Интервал начальной цены</div></div>
-                        </div>
-                    </div>
-                    <div class="row fl">
-                        <div class="left-area">
-                            <p class="b-label">Состояние заявки</p>
-                            <div class="multiselect">
-                                <div>
-                                    <input type="checkbox" id="item4">
-                                    <label for="item4">Прием заявок</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="item5">
-                                    <label for="item5">Работа комиссии</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="item6">
-                                    <label for="item6">Отменен</label>
-                                </div>
-                                <div>
-                                    <input type="checkbox" id="item7">
-                                    <label for="item7">Завершен</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right-area">
-                            <p class="b-label">Выберите регионы</p>
-                            <div class="input location"><div>Регионы</div></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row lowerOption">
-                    <div class="row fl">
-                        <div class="left-area">
-                            <p class="b-label">ИНН или наименование заказчика</p>
-                            <input type="text" class="" placeholder="Частично или полностью ИНН или наименование">
-                        </div>
-                        <div class="right-area">
-                            <p class="b-label">Форма проведения</p>
-                            <div class="input list"><div>Выберите тип закупки</div></div>
-                        </div>
-                    </div>
-                    <div class="row fl">
-                        <div class="left-area">
-                            <p class="b-label">Номер заявки</p>
-                            <input type="text" class="" placeholder="Частично или полность номер">
-                        </div>
-                        <div class="right-area">
-                            <p class="b-label">Сумма обеспечения</p>
-                            <div class="input price"><div>Сумма обеспечения</div></div>
-                        </div>
-                    </div>
-                    <div class="row buttonOption fl">
-                        <div class="left-area fl">
-                            <button type="submit" class="btn gold searching"><i class="fal fa-filter"></i>Показать результаты</button>
-                            <a href="" class="btn grey save"><i class="fas fa-bookmark"></i>Сохранить поиск</a>
-                        </div>
-                        <div class="right-area">
-                            <a href="#" class="link red reset">Сбросить настройки</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="output-area">
             <div class="wrapper">
                 <div class="title fl">
-                    <h1>Результаты поиска <span class="grey">(<span class="count">32</span> шт.)</span></h1>
+                    <h1>Избранные торги <span class="grey">(<span class="count">4</span> шт.)</span></h1>
                     <div class="option-area fl">
                         <div class="sort-area">
-                            <a href="#" class="link list i blue sort byDate"><i class="fal fa-chevron-down"></i>по дате обновления</a>
-                            <a href="#" class="link list i blue sort byPrice"><i class="fal fa-chevron-down"></i>по цене</a>
-                        </div>
-                        <a href="#" class="link list i green download"><i class="fal fa-download"></i>Скачать в фомате XLS</a>
+                        <a href="#" class="link list i blue sort byDate"><i class="fal fa-chevron-down"></i>по дате обновления</a>
+                        <a href="#" class="link list i blue sort byPrice"><i class="fal fa-chevron-down"></i>по цене</a>
+                    </div>
+                        <a href="#" class="link list red delete"></i>Удалить все</a>
                     </div>
                 </div>
                 <div class="content">
-                    <div class="tender-item fl">
+                    <div class="tender-item fl active">
                         <div class="head">
                             <a href="#" class="inner">
                                 <p class="main">
@@ -200,71 +92,7 @@
                                     <p class="price">1 000 346 , 00</p>
                                 </div>
                             </a>
-                            <a href="#" class="toFav"><i class="fal fa-heart"></i></a>
-                        </div>
-                        <div class="body">
-                            <p class="subject">
-                                Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей. Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей.
-                            </p>
-                            <p class="customer">
-                                ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ БРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "МОСКОВСКИЙ ГСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ М.В.ЛОМОНОСОВА"
-                            </p>
-                        </div>
-                        <div class="foot">
-                            <p class="date">Подача заявок до: <span class="deadline">04.04.2013</span></p>
-                            <div>
-                                <p class="date">Размещено: <span class="published">04.04.2013</span></p>
-                                <p class="date">Обновлено: <span class="refreshed">04.04.2013</span></p>
-                            </div>
-                            <p class="location"><i class="fal fa-map-marker-alt"></i>Томская область</p>
-                        </div>
-                    </div>
-                    <div class="tender-item fl">
-                        <div class="head">
-                            <a href="#" class="inner">
-                                <p class="main">
-                                    <span class="source">44-ФЗ</span> / №<span class="id">0320300004818000003</span>
-                                </p>
-                                <p class="type">Запрос у единственного поставщика</p>
-                                <p class="status processed">Работа комиссии</p>
-                                <div class="price-area">
-                                    Начальная цена:
-                                    <p class="price">1 000 346 , 00</p>
-                                </div>
-                            </a>
-                            <a href="#" class="toFav"><i class="fal fa-heart"></i></a>
-                        </div>
-                        <div class="body">
-                            <p class="subject">
-                                Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей. Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей.
-                            </p>
-                            <p class="customer">
-                                ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ БРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "МОСКОВСКИЙ ГСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ М.В.ЛОМОНОСОВА"
-                            </p>
-                        </div>
-                        <div class="foot">
-                            <p class="date">Подача заявок до: <span class="deadline">04.04.2013</span></p>
-                            <div>
-                                <p class="date">Размещено: <span class="published">04.04.2013</span></p>
-                                <p class="date">Обновлено: <span class="refreshed">04.04.2013</span></p>
-                            </div>
-                            <p class="location"><i class="fal fa-map-marker-alt"></i>Томская область</p>
-                        </div>
-                    </div>
-                    <div class="tender-item fl">
-                        <div class="head">
-                            <a href="#" class="inner">
-                                <p class="main">
-                                    <span class="source">44-ФЗ</span> / №<span class="id">0320300004818000003</span>
-                                </p>
-                                <p class="type">Запрос у единственного поставщика</p>
-                                <p class="status finished">Завершен</p>
-                                <div class="price-area">
-                                    Начальная цена:
-                                    <p class="price">1 000 346 , 00</p>
-                                </div>
-                            </a>
-                            <a href="#" class="toFav"><i class="fal fa-heart"></i></a>
+                            <a href="#" class="toFav"><i class="fas fa-heart"></i></a>
                         </div>
                         <div class="body">
                             <p class="subject">
@@ -290,13 +118,77 @@
                                     <span class="source">44-ФЗ</span> / №<span class="id">0320300004818000003</span>
                                 </p>
                                 <p class="type">Запрос у единственного поставщика</p>
+                                <p class="status processed">Работа комиссии</p>
+                                <div class="price-area">
+                                    Начальная цена:
+                                    <p class="price">1 000 346 , 00</p>
+                                </div>
+                            </a>
+                            <a href="#" class="toFav"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="body">
+                            <p class="subject">
+                                Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей. Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей.
+                            </p>
+                            <p class="customer">
+                                ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ БРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "МОСКОВСКИЙ ГСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ М.В.ЛОМОНОСОВА"
+                            </p>
+                        </div>
+                        <div class="foot">
+                            <p class="date">Подача заявок до: <span class="deadline">04.04.2013</span></p>
+                            <div>
+                                <p class="date">Размещено: <span class="published">04.04.2013</span></p>
+                                <p class="date">Обновлено: <span class="refreshed">04.04.2013</span></p>
+                            </div>
+                            <p class="location"><i class="fal fa-map-marker-alt"></i>Томская область</p>
+                        </div>
+                    </div>
+                    <div class="tender-item fl active">
+                        <div class="head">
+                            <a href="#" class="inner">
+                                <p class="main">
+                                    <span class="source">44-ФЗ</span> / №<span class="id">0320300004818000003</span>
+                                </p>
+                                <p class="type">Запрос у единственного поставщика</p>
+                                <p class="status finished">Завершен</p>
+                                <div class="price-area">
+                                    Начальная цена:
+                                    <p class="price">1 000 346 , 00</p>
+                                </div>
+                            </a>
+                            <a href="#" class="toFav"><i class="fas fa-heart"></i></a>
+                        </div>
+                        <div class="body">
+                            <p class="subject">
+                                Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей. Оказание услуг по осуществлению технического надзора за выполнением работ по реставрации и ремонту паркетных полов и дверных блоков 2-го этажа здания по адресу: Соляной пер., д. 9. Соляной городок. Кустарный музей.
+                            </p>
+                            <p class="customer">
+                                ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ БРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ "МОСКОВСКИЙ ГСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ ИМЕНИ М.В.ЛОМОНОСОВА"
+                            </p>
+                        </div>
+                        <div class="foot">
+                            <p class="date">Подача заявок до: <span class="deadline">04.04.2013</span></p>
+                            <div>
+                                <p class="date">Размещено: <span class="published">04.04.2013</span></p>
+                                <p class="date">Обновлено: <span class="refreshed">04.04.2013</span></p>
+                            </div>
+                            <p class="location"><i class="fal fa-map-marker-alt"></i>Томская область</p>
+                        </div>
+                    </div>
+                    <div class="tender-item fl active active">
+                        <div class="head">
+                            <a href="#" class="inner">
+                                <p class="main">
+                                    <span class="source">44-ФЗ</span> / №<span class="id">0320300004818000003</span>
+                                </p>
+                                <p class="type">Запрос у единственного поставщика</p>
                                 <p class="status decline">Отменен</p>
                                 <div class="price-area">
                                     Начальная цена:
                                     <p class="price">1 000 346 , 00</p>
                                 </div>
                             </a>
-                            <a href="#" class="toFav"><i class="fal fa-heart"></i></a>
+                            <a href="#" class="toFav"><i class="fas fa-heart"></i></a>
                         </div>
                         <div class="body">
                             <p class="subject">
@@ -351,10 +243,10 @@
                 </a>
                 <div class="app-area fl">
                     <a href="#">
-                        <img src="img/app-store.png" alt="Скачайте в AppStore!">
+                        <img src="../img/app-store.png" alt="Скачайте в AppStore!">
                     </a>
                     <a href="#">
-                        <img src="img/google_play.png" alt="Скачайте в Google Play!">
+                        <img src="../img/google_play.png" alt="Скачайте в Google Play!">
                     </a>
                 </div>
                 <div class="payment-area fl">

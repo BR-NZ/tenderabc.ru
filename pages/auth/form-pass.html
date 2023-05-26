@@ -7,21 +7,21 @@
 	<meta name="description" content="" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="shortcut icon" href="favicon.ico" />
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/fontawesome-pro-5.10/css/fontawesome-all.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/normalize.css" />
+	<link rel="stylesheet" href="/css/fontawesome-pro-5.10/css/fontawesome-all.css" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
-	<title>Авторизация / tenderabc.ru</title>
+	<title>Восстановление пароля / tenderabc.ru</title>
 </head>
 
 <body>
 	<main>
 		<div id="mask">
-			<a href="" class="close">
+			<a href="/" class="close">
 				<i class="fal fa-times"></i>
 			</a>
 		</div>
-		<div id="popup" class="form-auth x-center">
+		<div id="popup" class="form-pass x-center">
 			<div class="row">
 				<div class="logo-area" style="box-sizing: content-box; width: 62px;">          
 					<div class="logo" style="font-family: 'Open Sans', sans-serif; font-weight: 400; background-color: #CF1616; color: #FFFFFF; width: 100%; height: 92px; padding: 0px 9px; padding-top: 20px; line-height: 20px; font-size: 13px; transition: all 0.1s ease-in;">
@@ -36,23 +36,19 @@
 				</div>
 			</div>
 			<div class="row title">
-				<p class="title">Выполните вход</p>
+				<p class="title">Восстановить пароль</p>
 			</div>
 			<form id="auth-form" method="post" action="#">
 				<div class="field-area">
 					<div class="row">
-						<input class="fill blue" type="text" placeholder="Эл. почта или телефон" name="login" id="login" required>
-					</div>
-					<div class="row">
-						<input class="fill blue" type="password" placeholder="Пароль" name="password" id="password" required>
+						<input class="fill blue" type="text" placeholder="Адрес эл. почты аккаунта" name="email" id="email" required>
 					</div>
 				</div>
-				<div class="row link-area fl">
-					<a class="link red" href="form-pass.html">Забыли пароль?</a>
-					<a class="link blue arrow" href="form-reg.html">Зарегистрироваться</a>
+				<div class="row link-area">
+					<a class="link blue arrow" href="form-auth.html">Все, вспомнил</a>
 				</div>
 				<div class="row button-area">
-					<button class="btn tb blue submit" formaction="#" formmethod="post" type="submit">Вход</button>
+					<button class="btn tb blue submit" formaction="#" formmethod="post" type="submit">Отправить</button>
 				</div>
 			</form>
 			<div class="row social-area">

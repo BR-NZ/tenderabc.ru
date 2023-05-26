@@ -541,7 +541,7 @@ textarea {
 input.fill.grey:not(:focus),
 textarea.fill.green:not(:focus) {
     color: #969696;
-    border-color: #f7f7f7;
+    border-color: #e9e9e9;
     border-radius: 7px;
     background-color: #f7f7f7;
 }
@@ -549,21 +549,21 @@ textarea.fill.green:not(:focus) {
 input.fill.green:not(:focus),
 textarea.fill.green:not(:focus) {
     color: #4caf50;
-    border-color: #4caf50;
+    border-color: #4caf507a;
     background-color: #f2faf2;
 }
 
 input.fill.red:not(:focus),
 textarea.fill.red:not(:focus) {
     color: #cf1616;
-    border-color: #e68888;
+    border-color: #e68888a1;
     background-color: #fcf0f0;
 }
 
 input.fill.blue:not(:focus),
 textarea.fill.blue:not(:focus) {
     color: #52a4ec;
-    border-color: #52a4ec;
+    border-color: #52a4ec57;
     background-color: #eaf4fc;
 }
 
@@ -1046,7 +1046,7 @@ header div.head div.user-area a.icon.notification:hover {
 
 header div.head div.user-area a.icon.profile {
     margin-left: 20px;
-    font-size: 22px;
+    font-size: 20px;
     background-color: #eaf4fc;
 }
 
@@ -1193,7 +1193,7 @@ footer div.lower div.payment-area div.visa {
     position: relative;
     top: 12px;
     left: 4px;
-    width: 83px;
+    width: 80px;
     height: 26px;
     background: url(../img/visa-payment.svg) no-repeat;
     background-position: 50% 50%;
@@ -1203,7 +1203,7 @@ footer div.lower div.payment-area div.visa {
 footer div.lower div.payment-area div.mastercard {
     position: relative;
     top: 6px;
-    width: 60px;
+    width: 55px;
     height: 38px;
     margin: 0px 12px;
     background: url('../img/mastercard-payment.svg') no-repeat;
@@ -1241,7 +1241,7 @@ main#profile div.user-area div.userMain-area label[for='img-input'] {
     float: left;
     width: 110px;
     height: 110px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     color: #52a4ec;
     border: none;
@@ -1253,7 +1253,7 @@ main#profile div.user-area div.userMain-area label[for='img-input'] {
 main#profile div.user-area div.userMain-area label[for='img-input'] i {
     margin-top: 30px;
     margin-bottom: 3px;
-    font-size: 32px;
+    font-size: 26px;
 }
 
 main#profile div.user-area div.userMain-area>div {
@@ -1276,18 +1276,17 @@ main#profile div.user-area div.userMain-area p.login {
 }
 
 main#profile div.user-area div.userMain-area p.status {
-    padding: 0px 18px;
-    font-size: 15px;
-    font-size: 13px;
-    line-height: 37px;
+    padding: 0px 10px;
+    font-size: 10px;
+    line-height: 24px;
     text-transform: uppercase;
-    border: 2px solid #ffcd20;
+    border: 1px solid #ffcd20;
     border-radius: 12px;
     background-color: #fff8e0;
 }
 
 main#profile div.user-area div.userMain-area a.logout {
-    padding: 0px 65px;
+    padding: 0px 20px;
 }
 
 main#profile div.user-area div.field-area div.password-area {
@@ -1386,7 +1385,7 @@ main#profile div.subscribe-area div.check-row>div.row {
 }
 
 main#profile div.subscribe-area div.check-row span {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -1528,14 +1527,14 @@ div.output-area div.content div.tender-item div.head a.toFav {
     top: 0px;
     left: -55px;
     padding: 8px 15px;
-    font-size: 26px;
+    font-size: 24px;
     transition: opacity .09s ease-in;
     opacity: 0;
 }
 
 div.output-area div.content div.tender-item.active div.head a.toFav,
 div.output-area div.content div.tender-item div.head a.toFav:hover {
-    color: #cf1616;
+    color: #F37373;
 }
 
 div.output-area div.content div.tender-item.active div.head a.toFav,
